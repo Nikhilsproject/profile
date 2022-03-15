@@ -2,95 +2,426 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>nikhil vlogs</title>
+    <title>CRICKET BLOGGER</title>
+    <!--- - - - - - - - -  - - - - - - -  bootstrap 4.0  --------------------------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://kit.fontawesome.com/4fb5cb046b.js" crossorigin="anonymous"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Neuton&display=swap" rel="stylesheet">
+
+
+
+    <!--- - - - - - - - -  - - - - - - -  Javascript from bootstrap  --------------------------->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!--- - - - - - - - -  - - - - - - -  google fonts  --------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700&family=Montserrat:wght@900&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   </head>
   <body>
-    <table cellspacing ="20">
-      <tr>
-        <td>
-        <img src="./images/NIKHIL.png" alt="Nikhil profile photo">
-        </td>
-        <td>
-        <h1><strong><a href="./images/NIKHIL.png">Nikhil</a></strong></h1>
-        <a href="./contactdetails.html">Hire me</a>
-        <p><em>Founder of MNS company</em></p>
-        <p>I am a entrepreneur who work hard for my self. i have knowledge on the network and security and i also have the
-          expirence in those things i have done the security+ certification on CompTIA and am looking forward to do lot
-          more certification in the future am searchign for a job which is related to my field but the job seeker will not
-          approching me because i have a backlogs in higher education so waiting for the time to do things nice. </p>
-        </td>
-      </tr>
-    </table>
-    <hr>
-    <h3> Educatin and Certification</h3>
-    <ul>
-      <li>CompTIA Secuirty+
-        <ul>
-          <li>CompTIA, America</li>
-        </ul>
-      <li>BSC Degree on Computer Science
-        <ul>
-          <li>Vignan Degree College, Hyderabad</li>
-        </ul>
-      <li>Intermediate
-        <ul>
-          <li>Vashista Junior College, Bhainsa</li>
-        </ul>
-      <li>10th Class
-        <ul>
-          <li>Vikas High School, Bhainsa</li>
-        </ul>
+
+    <!--- - - - - - - - -  - - - - - - -  expand means nav-links coming in horizontal  --------------------------->
+    <!--- - - - - - - - -  - - - - - - -  navbar-light bg-light background color for navigation  --------------------------->
+
+    <!--- - - - - - - - -  - - - - - - -  navigation bar --------------------------->
+    <div class="container-fluid">
+
+    <nav class= "navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Cricket Blogger</a>
+        <!--- - - - - - - - -  - - - - - - -  button is for Toggle  --------------------------->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!--- - - - - - - - -  - - - - - - -  by using ml-auto the links set in right align  --------------------------->
+    <ul class= "navbar-nav ml-auto">
+        <li class= "nav-item">
+           <a class="nav-link" href="">Home</a>
+        </li>
+        <li class= "nav-item">
+           <a class="nav-link" href="">Cricket Prediction</a>
+        </li>
+        <!--- - - - - - dropdown for tournment we can also mention some of the feature in bootsrap navbar  -------------------->
+        <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Tournments
+                 </a>
+                 <ul class="dropdown-menu navbar-light bg-dark" aria-labelledby="navbarDropdown">
+                   <li><a class="dropdown-item" href="#">IPL 2022</a></li>
+                   <li><a class="dropdown-item" href="#">ICC WOMENS CRICKET</a></li>
+                   <li><a class="dropdown-item" href="#">BIG BASH LEAGUE</a></li>
+                 </ul>
+               </li>
+        <li class= "nav-item">
+           <a class="nav-link" href="">News</a>
+        </li>
     </ul>
-    <h3>Interest on:</h3>
-      <ol>
-        <li>Cyber Security</li>
-        <li>Pc Games</li>
-        <li>love</li>
-      </ol>
-      <hr size="3">
-    <h3>Work Experience</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>Year</th>
-          <th>Description</th>
-        </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2015- 2018</td>
-            <td>worked as a computer operator</td>
-          </tr>
-          <tr>
-            <td>2018-2022</td>
-            <td>word as a computer technician</td>
-          </tr>
-        </tbody>
-      </table>
+  </div>
+</nav>
 
-      <hr>
+<!--- x x x x x x x x x x - - -  navigation bar  x x x x x x x x x ------------->
 
-      <h3>SKILLS</h3>
-      <table cellspacing ="20">
-      <tr>
-        <td>Python</td>
-        <td>★ ★ ★ ★ ★</td>
-      </tr>
-      <tr>
-        <td>HTML</td>
-        <td>★ ★ ★ ★ ★</td>
-      </tr>
-      <tr>
-        <td>css</td>
-        <td>★</td>
-      </tr>
-      <tr>
-        <td>c</td>
-        <td>★ ★ ★</td>
-      </tr>
-    </table>
 
-    <hr>
+<section id="title" class="title_section">
+  <h1>Today's Match Prediction</h1>
+  <button type="button" class="btn btn-secondary btn-lg">Explore</button>
+  </div>
+</section>
+
+
+<!--- - - - - - - - -  - - - - - - -  blog post --------------------------->
+
+<div class="container-fluid">
+  <section id="blogs" class="blog-items">
+
+<div id="blog-carousel" class="carousel slide" data-ride="false">
+  <div class="carousel-inner">
+    <!--- - - - - - - - -  - -  -  active denotes first slide in the carousel --------------------------->
+    <!--- - - - - - - - -  - -  -  mentioned row here to display 3 cards in one carousel----------------->
+    <!--- - - - - - - - -  - -  -  mentioned three cards in one slide  --------------------------->
+
+    <div class="carousel-item active container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 align-item-sm-center">
+          <div class="card blog-cards" style="width:23rem;">
+          <img src="./images/cricket_blog_image/blog1.png" class="card-img-top" alt="...">
+            <div class="card-body ">
+            <h5 class="card-title">PAKISTAN VS AUSTRALIA 1ST TEST</h5>
+            <hr>
+            <p class="card-text">pakistan vs australia match is held in the bangalore chinna swamy stadium on thursday</p>
+            <a href="#" class="btn btn-primary">open</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 align-item-sm-center">
+          <div class="card blog-cards" style="width:23rem;">
+          <img src="./images/cricket_blog_image/blog1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">PAKISTAN VS AUSTRALIA 1ST TEST</h5>
+            <hr>
+            <p class="card-text">pakistan vs australia match is held in the bangalore chinna swamy stadium on thursday</p>
+            <a href="#" class="btn btn-primary">open</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 align-item-sm-center mx-auto">
+          <div class="card blog-cards" style="width:23rem;">
+          <img src="./images/cricket_blog_image/blog1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">PAKISTAN VS AUSTRALIA 1ST TEST</h5>
+            <hr>
+            <p class="card-text">pakistan vs australia match is held in the bangalore chinna swamy stadium on thursday</p>
+            <a href="#" class="btn btn-primary">open</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="carousel-item">
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 ">
+          <div class="card blog-cards" style="width:23rem;">
+          <img src="./images/cricket_blog_image/blog1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">PAKISTAN VS AUSTRALIA 1ST TEST</h5>
+            <hr>
+            <p class="card-text">pakistan vs australia match is held in the bangalore chinna swamy stadium on thursday</p>
+            <a href="#" class="btn btn-primary">open</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 ">
+          <div class="card blog-cards" style="width:23rem;">
+          <img src="./images/cricket_blog_image/blog1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">PAKISTAN VS AUSTRALIA 1ST TEST</h5>
+            <hr>
+            <p class="card-text">pakistan vs australia match is held in the bangalore chinna swamy stadium on thursday</p>
+            <a href="#" class="btn btn-primary">open</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <div class="card blog-cards" style="width:23rem;">
+          <img src="./images/cricket_blog_image/blog1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">PAKISTAN VS AUSTRALIA 1ST TEST</h5>
+            <hr>
+            <p class="card-text">pakistan vs australia match is held in the bangalore chinna swamy stadium on thursday</p>
+            <a href="#" class="btn btn-primary">open</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 ">
+          <div class="card blog-cards" style="width:23rem;">
+          <img src="./images/cricket_blog_image/blog1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">PAKISTAN VS AUSTRALIA 1ST TEST</h5>
+            <hr>
+            <p class="card-text">pakistan vs australia match is held in the bangalore chinna swamy stadium on thursday</p>
+            <a href="#" class="btn btn-primary">open</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 ">
+          <div class="card blog-cards" style="width:23rem;">
+          <img src="./images/cricket_blog_image/blog1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">PAKISTAN VS AUSTRALIA 1ST TEST</h5>
+            <hr>
+            <p class="card-text">pakistan vs australia match is held in the bangalore chinna swamy stadium on thursday</p>
+            <a href="#" class="btn btn-primary">open</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <div class="card blog-cards" style="width:23rem;">
+          <img src="./images/cricket_blog_image/blog1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">PAKISTAN VS AUSTRALIA 1ST TEST</h5>
+            <hr>
+            <p class="card-text">pakistan vs australia match is held in the bangalore chinna swamy stadium on thursday</p>
+            <a href="#" class="btn btn-primary">open</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--- - - - - - - - -  -  this buttons are left and right slide of the Carousel --------------------------->
+  <!--- - - - - -  -  customaized desize form angel li class from tindog  --------------------------->
+
+
+    <a class="carousel-control-prev" href="#blog-carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#blog-carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+
+</section>
+
+<!--- x x x x x x x x x x - - -  blog post end  x x x x x x x x x ------------->
+
+        <div class="container-fluid">
+          <section id="news">
+            <h1><b>Cricket News</b></h1>
+              <div class="row">
+                <div class="posts col-lg-8">
+                <div class="post-content " data-aos="zoom-in" data-aos-delay="200">
+                  <div class="post-image">
+                    <div>
+                      <img src="./images/cricket_blog_image/shane_warne.png" class="news-img" alt="blog1">
+                    </div>
+                  </div>
+
+                  <div class="post-title">
+                      <a href="#"><h3>Thank you, Warney: My tribute to Shane Warne, the King of Spin </h3></a>
+                      <div class="post-details">
+                      <span><i class="fas fa-user"></i><b>&nbsp;&nbsp;Manthena nikhil&nbsp;&nbsp;</b></span> <span><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;January 14, 2019</span>
+                        </div>
+                      <p>Over 48 hours has passed since the news that shook every cricket fan to their very core.
+                        The kind of news that you’d have to rub your eyes to make sure you are actually reading what
+                        you are reading. The kind you’d wish was a terrible dream that you’d wake up from in relief.
+                        Or, as Fox Cricket’s Mark Howard put it, where he would just appear and say it was all a joke.
+
+                        Shane Warne, one of the greatest ever to grace the beautiful game of cricket, has died at age 52.
+                        That sentence will take a while to adjust to. It just hasn’t sunk in. Only hours before his fatal
+                        heart attack in Thailand, Warne paid tribute to another Australian cricketing legend who had passed
+                        away just a day earlier; the great Rod Marsh. It is a reminder of how short and fragile life is.
+                      </p>
+                  <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                  <hr>
+                </div>
+              </div>
+
+
+              <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="post-image">
+                      <div>
+                          <img src="./images/cricket_blog_image/pakvsaus.png" class="news-img" alt="blog1">
+                      </div>
+                  </div>
+                  <div class="post-title">
+                    <a href="#"><h3>Fewest wickets to fall in Test history: Stats from bore draw in Rawalpindi</h3></a>
+                      <div class="post-details">
+                        <span><i class="fas fa-user"></i><b>&nbsp;&nbsp;Manthena nikhil&nbsp;&nbsp;</b></span> <span><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;January 14, 2019</span>
+                        </div>
+                      <p>Had the first Test between Pakistan and Australia matched the hype before the series, we may
+                        have witnessed one of the great Test matches. Instead, it was one to forget, with Australia’s
+                        first Test in the country since 1998 ending in the borest of bore draws.
+
+                        Just 14 wickets fell across the five days in a total of 379.1 overs. What’s worse is most of the
+                        dismissals were due to batting errors rather than from brilliance from the bowler or assistance from
+                        the pitch. The batsmen feasted, scoring a total of 1,187 runs on a pitch that surely must face scrutiny
+                        from the ICC.
+
+                        Test cricket deserves better than this Rawalpindi wicket. There was almost no sideways movement or any uneven
+                        bounce as the Test went on, with the surface too slow for the bowlers to make an impact. The ball going past the
+                        bat was as rare as an ecclipse; an event worthy of bringing all your family and friends around the TV or smart
+                        device to watch the replay of such a momentous occasion.
+                      </p>
+                      <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                      <hr>
+                  </div>
+              </div>
+
+
+              <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="post-image">
+                      <div>
+                          <img src="./images/cricket_blog_image/Shreyas.png" class="news-img" alt="blog1">
+                      </div>
+                  </div>
+                  <div class="post-title">
+                    <a href="#"><h3>IND vs SL 1st T20 Dream11 Prediction & Fan2Play Possible 11 Pitch Report</h3></a>
+                      <div class="post-details">
+                        <span><i class="fas fa-user"></i><b>&nbsp;&nbsp;Manthena nikhil&nbsp;&nbsp;</b></span> <span><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;January 14, 2019</span>
+                        </div>
+                      <p>The cricket world continues to rotate at a rapid rate, with India and Sri Lanka going head-to-head less
+                        than a week after their last assignments.
+
+                        Sri Lanka were in Australia merely four days ago, where they picked up a morale-boosting, consolation victory
+                        in the final T20I. They displayed positive signs right throughout the five-match series, which they will be aiming
+                        to build on in this three-match assignment. However, Wanindu Hasaranga could be out of the entire series due to
+                        COVID-19, and Kusal Mendis and Maheesh Theekshana have been reportedly struck down by injuries.
+
+                        Combine those absentees with the fact that Sri Lanka are winless in their last seven completed T20Is in India,
+                        and it is an even tougher ask. India are without stars of their own, but their depth continues to shine through.
+                        Also, the fact they won matches against the West Indies when batting first is cause for encouragement, as this was
+                        an area they struggled in badly in last year’s World Cup.
+                      </p>
+                      <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                  </div>
+
+                  <div class="pagination flex-row">
+                      <a href="#"><i class="fas fa-chevron-left"></i></a>
+                      <a href="#" class="pages">1</a>
+                      <a href="#" class="pages">2</a>
+                      <a href="#" class="pages">3</a>
+                      <a href="#"><i class="fas fa-chevron-right"></i></a>
+                  </div>
+              </div>
+            </div>
+
+              <section id="trending">
+                <h2><b>Trending Now</b></h2>
+
+                <div class="trending-content">
+                        <div>
+                            <img class="trending-image" src="./images/cricket_blog_image/virat.png" class="img" alt="blog1">
+                        <div class="post-info">
+                            <span class="trending-date"><i class="fas fa-calendar-alt "></i>&nbsp;&nbsp;January 14, 2019</span>
+                        </div>
+                    </div>
+                    <div class="post-title">
+                        <a style="color:white;" href="#"><h5><b>IPL 2022: Renewed Energy, Really Looking Forward To This Season – Virat Kohli</b></h5></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="trending-content">
+                        <div>
+                            <img class="trending-image" src="./images/cricket_blog_image/virat.png" class="img" alt="blog1">
+                        <div class="post-info">
+                            <span><i class="fas fa-calendar-alt "></i>&nbsp;&nbsp;January 14, 2019</span>
+                        </div>
+                    </div>
+                    <div class="post-title">
+                        <a style="color:white;" href="#"><h5><b>IPL 2022: Renewed Energy, Really Looking Forward To This Season – Virat Kohli</b></h5></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="trending-content">
+                        <div>
+                            <img class="trending-image" src="./images/cricket_blog_image/virat.png" class="img" alt="blog1">
+                        <div class="post-info">
+                            <span><i class="fas fa-calendar-alt "></i>&nbsp;&nbsp;January 14, 2019</span>
+                        </div>
+                    </div>
+                    <div class="post-title">
+                        <a style="color:white;" href="#"><h5><b>IPL 2022: Renewed Energy, Really Looking Forward To This Season – Virat Kohli</b></h5></a>
+                    </div>
+                </div>
+                <hr>
+              </section>
+
+              <div class="sidebar col-lg-4">
+                <section id="tournment">
+                      <h2><b>Tournments</b></h2>
+                      <ul>
+                        <li class="tournment-lists">
+                          <a href="#">IPL - 2022</a>
+                        </li>
+                        <li class="tournment-lists">
+                          <a href="#">ICC WOMENS WORLD CUP</a>
+                        </li>
+                        <li class="tournment-lists">
+                          <a href="#">T20 WORLD CUP</a>
+                        </li>
+                        <li class="tournment-lists">
+                          <a href="#">ASIA CUP</a>
+                        </li>
+                        <li class="tournment-lists">
+                          <a href="#">THE ASHES SERIES</a>
+                        </li>
+                      </ul>
+                </section>
+
+
+
+              </div>
+            </div>
+          </section>
+
+
+          <footer id="footer">
+            <div class="row">
+            <div class="about-us col-lg-6">
+              <h2>About us</h2>
+              <p> we upload news on cricekt field and also we have a great experience
+                on cricketing field we upload the cricket prediction also
+              </p>
+            </div>
+            <div class="newsletter">
+              <h2>Newsletter</h2>
+              <p>stay update with our latest content</p>
+              <div class="form-element">
+                  <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+              </div>
+            </div>
+          </div>
+          </footer>
+
 
   </body>
 </html>
